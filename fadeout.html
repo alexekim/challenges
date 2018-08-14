@@ -1,0 +1,29 @@
+<div id="asdf">hey!!!</div>
+<p id="qwer">2 sec</p>
+
+<div id="asdf2">hey!!!</div>
+<p id="qwer2">4 sec</p>
+
+<div id="asdf3">hey!!!</div>
+<p id="qwer3">6 sec</p>
+
+<button id="zebutton">disappear</button>
+
+<script type="text/javascript">
+  $("#zebutton").click(function(){
+    $("#asdf").fadeOut(2000, function(){
+      $("#qwer").text("hey");
+    })
+
+      $("#asdf2").fadeOut(4000, function(){
+      $("#qwer2").text("hey");
+    })
+
+    $("#asdf3").fadeOut(6000, function(){
+      $("#qwer3").text("hey");
+    })
+
+
+  $(this).remove()
+  })
+</script>
