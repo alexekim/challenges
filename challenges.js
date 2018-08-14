@@ -10,8 +10,8 @@ function LongestWord(sen){
   }
   x = x.sort();
   console.log(x);
-  // sen = x[x.length-1][1];
-  // return sen;
+  var sen = x[x.length-1][1];
+  return sen;
 }
 
 function LongestWord(sen) {

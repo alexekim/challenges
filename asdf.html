@@ -1,0 +1,19 @@
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+
+<div class="asdf">
+
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    for (var i = 1; i < 21; i++) {
+      $(".asdf").append("<button onclick='alert(" + i + ")'>"+i+"</button>");
+    }
+
+  })
+</script>
