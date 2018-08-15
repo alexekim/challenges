@@ -1,0 +1,19 @@
+<script type="text/javascript">
+  var url = "https://jsonmock.hackerrank.com/api/movies/search/?Title=";
+
+  http.get(url, function(res){
+    var body = '';
+
+    res.on('data', function(chunk){
+      // body = body+chunk;
+      body += chunk;
+    });
+
+    res.on('end', function(){
+      var fbResponse = JSON.parse(body);
+      console.log(fbResponse);
+    })
+  }).on('error', function(e){
+    throw e;
+  })
+</script>
