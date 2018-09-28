@@ -131,22 +131,22 @@ function AlphabetSoup(str) {
 
 var subtraction = function(number){
   var stringedNumber = number.toString();
-  if (stringedNumber.length ===3) {
+  if (stringedNumber.length === 3) {
     number = number.toString()+"0"
-    console.log("rearranged: "+number);
+    // console.log("rearranged: "+number);
   }
 
   var higher = (number).toString().split("").sort(function(a,b){return(b-a)}).join("");
   var lower = (number).toString().split("").sort().join("");
-  console.log(higher + "-" + lower);
+  // console.log(higher + "-" + lower);
   var result = higher-lower;
   var stringResult = result.toString(); //turns result number into string
 
-  console.log("2: "+ stringResult);
+  // console.log("2: "+ stringResult);
   if(stringResult.length == 3){
     var newString = result.toString()+"0";
     newString = parseInt(newString); // return it to number ex. 999
-    console.log("3: added 0: "+newString);
+    // console.log("3: added 0: "+newString);
     return newString;
   } else if (stringResult.length == 4){
     var newString = result;
@@ -158,7 +158,7 @@ var subtraction = function(number){
 function KaprekarsConstant(num) {
   var times = 0;
   var filler = num;
-  console.log("1: "+filler);
+  // console.log("1: "+filler);
   // subtraction(filler);
   if(subtraction(filler)== 6174 ){
       console.log("done");
@@ -167,10 +167,10 @@ function KaprekarsConstant(num) {
   } else if(subtraction(filler) != 6174){
     // console.log("subtraction called");
     times = times+1;
-    console.log("filler: " + filler);
-    console.log("4: result is " + subtraction(filler));
+    // console.log("filler: " + filler);
+    // console.log("4: result is " + subtraction(filler));
     subtraction(filler);
-    console.log("times: "+times);
+    // console.log("times: "+times);
   }
 }
 
