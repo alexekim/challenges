@@ -21,7 +21,7 @@ function LetterChanges(str) {
       "q": "r",
       "r": "s",
       "s": "t",
-      "t": "u",
+      "t": "U",
       "u": "v",
       "v": "w",
       "w": "x",
@@ -35,7 +35,7 @@ function LetterChanges(str) {
     str = str.split("");
 
     for (var i = 0; i < str.length; i++) {
-      if (reference[str[i]] !== null){
+      if (reference[str[i]] ){
         emptyArr.push(reference[str[i]]);
       } else {
         emptyArr.push(str[i]);

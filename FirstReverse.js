@@ -6,3 +6,8 @@
 function FirstReverse(str){
   return str.split("").reverse().join("");
 }
+
+
+function FirstReverse(str){
+  str.split("").reverse().join("");
+}
